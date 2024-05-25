@@ -1,0 +1,22 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "checkJs": true,
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"],
+      "@env": ["./constants/env.js"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+  "exclude": [
+    "node_modules",
+    "android",
+    "ios",
+    "babel.config.js",
+    "metro.config.js",
+    "lint-staged.config.js"
+  ]
+}
